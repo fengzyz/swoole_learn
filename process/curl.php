@@ -14,7 +14,6 @@ $urls  = [
     'https://learnku.com',
     'https://www.imooc.com'
 ];
-
 for ($i = 0; $i < 3;$i++){
     $process = new swoole_process(function (swoole_process $worker)
     use($i,$urls){
